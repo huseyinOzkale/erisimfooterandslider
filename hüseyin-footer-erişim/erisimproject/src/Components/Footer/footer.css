@@ -12,7 +12,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 3.5rem;
     background: #1a242f;
-    position: absolute;
+  
     left: 0;
     right: 0;
     bottom: 0;
@@ -67,7 +67,6 @@
   
   .hak {
   
-    position: absolute;
     /* Pozisyonu mutlak olarak ayarlayın */
     top: 89%;
     /* Üst kenarı %50 dikey hizalanır */
@@ -81,7 +80,6 @@
     height: 2px;
     border-bottom: 1px solid #ccc;
     margin: -12px 0px;
-    position: absolute;
     /* Pozisyonu mutlak olarak ayarlayın */
     top: 89%;
     /* Üst kenarı %50 dikey hizalanır */

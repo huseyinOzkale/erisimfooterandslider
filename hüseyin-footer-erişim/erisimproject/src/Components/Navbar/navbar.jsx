@@ -21,14 +21,25 @@ function Navbar() {
             );
         };
 
+        const handleThumbnailClick = (index) => {
+            setItemActive(index);
+        };
+
         next.addEventListener('click', handleNext);
         prev.addEventListener('click', handlePrev);
+
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => handleThumbnailClick(index));
+        });
 
         return () => {
             next.removeEventListener('click', handleNext);
             prev.removeEventListener('click', handlePrev);
+            thumbnails.forEach((thumbnail, index) => {
+                thumbnail.removeEventListener('click', () => handleThumbnailClick(index));
+            });
         };
-    }, [itemActive]); // itemActive state'i değiştiğinde useEffect yeniden çalışacak
+    }, [itemActive]);
 
     return (
         <div className="nav">
@@ -88,19 +99,19 @@ function Navbar() {
                     <button id="next">İleri</button>
                 </div>
                 <div className="thumbnail">
-                    <div className={`item ${itemActive === 0 ? 'active' : ''}`}>
+                    <div className={`item ${itemActive === 0 ? 'active' : ''}`} onClick={() => setItemActive(0)}>
                         <img src="/src/assets/naslovna_dalekovod-2.jpg" alt="Slider 01"></img>
                         <div className="content">
                             Name Slider
                         </div>
                     </div>
-                    <div className={`item ${itemActive === 1 ? 'active' : ''}`}>
+                    <div className={`item ${itemActive === 1 ? 'active' : ''}`} onClick={() => setItemActive(1)}>
                         <img src="/src/assets/naslovna_data_cables.jpg" alt="Slider 02"></img>
                         <div className="content">
                             Name Slider
                         </div>
                     </div>
-                    <div className={`item ${itemActive === 2 ? 'active' : ''}`}>
+                    <div className={`item ${itemActive === 2 ? 'active' : ''}`} onClick={() => setItemActive(2)}>
                         <img src="/src/assets/naslovna_esg.jpg" alt="Slider 03"></img>
                         <div className="content">
                             Name Slider
