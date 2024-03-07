@@ -1,0 +1,145 @@
+* {
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer {
+    padding: 80px 13% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    background: #1a242f;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .footer-content h4 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+  
+  }
+  
+  .footer-content li {
+    margin-bottom: 16px;
+  }
+  
+  .footer-content li a {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+  
+  }
+  
+  .footer-content li a:hover {
+    transform: translateY(-3px) translateX(-5px);
+    color: #fff;
+  
+  }
+  
+  .footer-content p {
+    color: #d6d6d6;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+    width: 75%;
+  }
+  
+  .icons a {
+    display: inline-block;
+    font-size: 22px;
+    color: #d6d6d6;
+    margin-right: 17px;
+    transition: all .40s ease;
+  }
+  
+  .icons a:hover {
+    color: #fff;
+    transform: translateY(-5px);
+  }
+  
+  .hak {
+  
+    position: absolute;
+    /* Pozisyonu mutlak olarak ayarlayın */
+    top: 89%;
+    /* Üst kenarı %50 dikey hizalanır */
+    left: 38%;
+    color: #fff;
+  }
+  
+  .br {
+    border: 0;
+    width: 90%;
+    height: 2px;
+    border-bottom: 1px solid #ccc;
+    margin: -12px 0px;
+    position: absolute;
+    /* Pozisyonu mutlak olarak ayarlayın */
+    top: 89%;
+    /* Üst kenarı %50 dikey hizalanır */
+    left: 5%;
+    right: -10%;
+  }
+  
+  @media (max-width: 1690px) {
+    .footer {
+      padding: 50px 5% 40px;
+    }
+  }
+  
+  @media (max-width: 1120px) {
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+      gap: 2rem;
+  
+    }
+  }
+  @media (max-width: 1070px) {
+    .footer {
+      display: grid;
+      gap: 2.5rem;
+  
+    }
+    .hak{
+      
+      margin: 30px -129px;
+    }
+    .br{
+      position: absolute;
+      /* Pozisyonu mutlak olarak ayarlayın */
+      top: 95%;
+      /* Üst kenarı %50 dikey hizalanır */
+      left: 5%;
+      right: -10%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .footer {
+      display: grid;
+      gap: 2.5rem;
+  
+    }
+    .hak{
+      margin: 50px -129px;
+    }
+    .br{
+      position: absolute;
+      /* Pozisyonu mutlak olarak ayarlayın */
+      top: 95%;
+      /* Üst kenarı %50 dikey hizalanır */
+      left: 5%;
+      right: -10%;
+    }
+  }
+  
+  
